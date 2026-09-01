@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Atividade-formularios</title>
+</head>
+<body>
+
+
+    <h1>Agendamento de Atividade-Disney World</h1>
+
+    <label>RESORT:</label>
+    <input type="text" value="Disney World Orlando">
+    <br>
+
+    <label>Senha:</label>
+    <input type="password">
+    <br>
+
+    <label>Preenchimento: 1/5</label>
+    <progress value="1" max="5"></progress>
+
+    <hr>
+
+    <label>Nome do responsável:</label>
+    <input
+        type="text"
+        placeholder="Informe nome completo"
+        style="width: 590px;"
+    >
+    <br>
+
+    <label>Nº de familiares (incluindo crianças):</label>
+    <input type="number" style="width: 58px;">
+    <br>
+
+    <fieldset>
+        <legend>Sexo</legend>
+
+        <input type="radio" name="sexo" id="masculino">
+        <label for="masculino">Masculino</label>
+
+        <input type="radio" name="sexo" id="feminino" checked>
+        <label for="feminino">Feminino</label>
+    </fieldset>
+
+    <label>e-mail:</label>
+    <input type="email" style="width: 760px;">
+    <br>
+
+    <input type="checkbox" id="emails" checked>
+    <label for="emails">Quero receber e-mails</label>
+
+    <hr>
+
+    <h2>Acesso ao Parque</h2>
+
+    <label>Data da visita:</label>
+    <input type="date">
+
+    <label> - Hora da Entrada:</label>
+    <input type="time">
+
+    <br>
+
+    <label>Cor da Pulseira:</label>
+    <input type="color" value="#8000ff">
+
+    <br>
+
+    <label>Número de atrações a visitar:</label>
+    <input
+        type="range"
+        min="0"
+        max="20"
+        value="10"
+        oninput="valor.value = this.value"
+    >
+    <output id="valor">10</output>
+
+    <br>
+
+    <label>Foto da Família:</label>
+    <input type="file">
+
+    <h2>Preferências de Comida</h2>
+
+    <textarea
+        rows="3"
+        cols="70"
+    ></textarea>
+
+    <hr>
+
+    <h2>Você concorda com os termos?</h2>
+
+    <select>
+        <option>Sim</option>
+        <option>Não</option>
+    </select>
+
+    <br>
+
+    <button type="button">Enviar</button>
+
+</body>
+</html>
